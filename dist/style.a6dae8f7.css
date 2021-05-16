@@ -1,0 +1,225 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #00252E;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+  line-height: 36px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 24px;
+}
+
+.header {
+  background-image: url("/bg-hero-mobile.83217d71.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #EDFBFF;
+}
+.header .logoSection {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 65%;
+  max-width: 200px;
+}
+.header .tryIt,
+.header .logo__link {
+  flex: 1 1 50%;
+}
+.header .tryIt {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .hero {
+  padding: 3.5rem 2.25rem 2.5rem;
+  margin: auto;
+  text-align: center;
+}
+.header .hero__summary {
+  margin: 2rem auto;
+}
+.header .img__container {
+  margin-top: 3rem;
+}
+
+.main {
+  padding: 3rem 1.25rem;
+}
+.main .primary {
+  box-shadow: -1px 3px 6px 5px #979797;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.main .primary__sub {
+  padding-top: 3rem;
+  text-align: center;
+}
+.main .primary__summary {
+  font-size: 0.875rem;
+  color: #808E9A;
+}
+.main .primary__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.get__ready {
+  position: relative;
+  top: 2rem;
+  padding: 3rem 1.25rem;
+}
+.get__ready .aside__container {
+  box-shadow: 2px 2px 2px 2px #979797;
+  border-radius: 20px;
+  padding: 2rem 0;
+  z-index: 2;
+  position: relative;
+  background: white;
+}
+.get__ready .secondary__title {
+  font-size: 1.125rem;
+  text-align: center;
+  color: #00252E;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #00252e;
+  color: #ffffff;
+  padding: 8rem 1rem 4rem;
+  margin-top: -6rem;
+}
+.footer .logoFooter {
+  transform: scale(0.6);
+  margin-left: -48px;
+  padding-left: 0;
+  display: block;
+}
+.footer .logoFooter path {
+  fill: #ffffff;
+}
+.footer .contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.footer .fa {
+  margin-right: 20px;
+}
+
+.btn__try {
+  background-color: #ffffff;
+  font-size: 0.625rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #00252E;
+  text-decoration: none;
+  text-align: center;
+}
+
+.get__started {
+  background-color: #FF52C1;
+  padding: 0.8rem 2rem;
+  width: 80%;
+  display: block;
+  margin: auto;
+  max-width: 240px;
+  font-size: 0.75rem;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
