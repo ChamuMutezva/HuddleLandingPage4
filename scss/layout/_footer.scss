@@ -1,0 +1,28 @@
+@use '../utils';
+
+.footer {
+    background-color: #00252e;
+    color: utils.$tx-white;
+    padding: 8rem 1rem 4rem;
+    margin-top: -6rem;
+
+    .logoFooter {
+        transform: scale(.6);
+        margin-left: -48px;
+        padding-left: 0;
+        display: block;
+    }
+
+    .logoFooter path {
+        fill: utils.$tx-white;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .fa {
+        margin-right: 20px;
+    }
+}

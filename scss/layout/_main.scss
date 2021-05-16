@@ -1,0 +1,23 @@
+@use '../utils';
+.main {
+	padding: 3rem 1.25rem;
+    .primary {
+        box-shadow: -1px 3px 6px 5px #979797;
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    .primary__sub {
+        padding-top: 3rem;
+        text-align: center;
+    }
+    .primary__summary {
+        font-size: 0.875rem;
+        color: utils.$tx-mid-grey;
+    }
+    .primary__title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+   
+}

@@ -1,0 +1,46 @@
+@use '../utils';
+
+.header {
+    background-image: url("../images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: utils.$bg-lime;
+
+    .logoSection {
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 65%;
+        max-width: 200px;
+    }
+
+    .tryIt,
+    .logo__link {
+        flex: 1 1 50%;
+    }
+
+    .tryIt {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    // hero section
+    .hero {
+        padding: 3.5rem 2.25rem 2.5rem;
+        margin: auto;
+        text-align: center;
+    }
+    .hero__summary {
+        margin: 2rem auto;
+    }
+
+    .img__container {
+        margin-top: 3rem;
+    }
+    
+}

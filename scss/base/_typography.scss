@@ -1,0 +1,17 @@
+@use '../utils';
+body {
+    font-family: utils.$main-font;
+    line-height: 1.5;
+    font-size: 16px;
+    color: utils.$tx-green-black;
+}
+h1, h2, h3, h4 {
+    font-family: utils.$secondary-font;
+    line-height: 36px;
+}
+h1 {
+    font-size: 1.5rem;
+}
+p {
+	line-height: 24px;
+}
