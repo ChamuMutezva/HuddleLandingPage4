@@ -25,3 +25,22 @@
     color: utils.$tx-green-black;
     margin-bottom: 2rem;
 }
+
+@include utils.mQ(1080px) {
+    .get__ready {
+        padding: 0;
+        top: 7rem;
+    }
+
+    .secondary__title {
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+        line-height: 60px;
+    }
+
+    .aside__container {
+        padding: 2rem 0 5rem;
+    }
+
+}

@@ -94,8 +94,20 @@ h1 {
 
 p {
   line-height: 24px;
+  font-size: 0.875rem;
 }
 
+@media screen and (min-width: 1080px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 60px;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+}
 .header {
   background-image: url("/bg-hero-mobile.83217d71.svg");
   background-repeat: no-repeat;
@@ -132,7 +144,7 @@ p {
   padding: 3.5rem 2.25rem 2.5rem;
   margin: auto;
   text-align: center;
-  max-width: 1280px;
+  max-width: 1270px;
 }
 
 .hero__summary {
@@ -151,8 +163,13 @@ p {
 
 @media screen and (min-width: 1080px) {
   .header {
-    padding: 3.5rem 5rem;
+    background-image: url("/bg-hero-desktop.9a31e454.svg");
+    padding: 3rem 5rem 1rem;
     text-align: left;
+  }
+
+  .logoSection {
+    padding: 1rem 1.5rem 0;
   }
 
   .hero {
@@ -160,14 +177,19 @@ p {
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    padding: 0 0 2.5rem;
   }
 
   .build {
     margin: 0;
+    max-width: 536px;
+    flex: 1 1 40%;
   }
 
   .img__container {
     margin: 3rem 0;
+    max-width: 680px;
+    flex: 1 1 60%;
   }
 }
 .main {
@@ -188,7 +210,6 @@ p {
 }
 
 .primary__summary {
-  font-size: 0.875rem;
   color: #808E9A;
 }
 
@@ -199,7 +220,7 @@ p {
 
 @media screen and (min-width: 1080px) {
   .main {
-    padding: 3rem 5rem;
+    padding: 8rem 5rem 3rem;
   }
 
   .primary {
@@ -207,6 +228,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto 4rem;
   }
   .primary:nth-child(odd) {
     flex-direction: row-reverse;
@@ -245,6 +267,23 @@ p {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 1080px) {
+  .get__ready {
+    padding: 0;
+    top: 7rem;
+  }
+
+  .secondary__title {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    line-height: 60px;
+  }
+
+  .aside__container {
+    padding: 2rem 0 5rem;
+  }
+}
 .footer {
   background-color: #00252e;
   color: #ffffff;
@@ -254,6 +293,8 @@ p {
 .footer__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: baseline;
+  gap: 25px;
 }
 
 .footer__logo {
@@ -341,7 +382,7 @@ li:not(:last-child) {
   background-color: #ffffff;
   font-size: 0.625rem;
   padding: 0.5rem 1.5rem;
-  border-radius: 12px;
+  border-radius: 24px;
   font-weight: 700;
   color: #00252E;
   text-decoration: none;
@@ -357,12 +398,15 @@ li:not(:last-child) {
   max-width: 240px;
   font-size: 0.75rem;
   color: #ffffff;
-  border-radius: 20px;
 }
 
 @media screen and (min-width: 1080px) {
   .btn__try {
-    padding: 1rem 4.5rem;
+    padding: 1rem 3rem;
+  }
+
+  .hero__btn {
+    margin-left: 0;
   }
 }
 .wrapper {

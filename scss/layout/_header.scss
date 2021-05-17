@@ -37,7 +37,7 @@
     padding: 3.5rem 2.25rem 2.5rem;
     margin: auto;
     text-align: center;
-    max-width: 1280px;
+    max-width: 1270px;
 }
 
 .hero__summary {
@@ -57,8 +57,12 @@
 
 @include utils.mQ(1080px) {
     .header {
-        padding: 3.5rem 5rem;
+        background-image: url("../images/bg-hero-desktop.svg");
+        padding: 3rem 5rem 1rem;
         text-align: left;
+    }
+    .logoSection {
+        padding: 1rem 1.5rem 0;
     }
 
     .hero {
@@ -66,14 +70,19 @@
         justify-content: space-between;
         align-items: center;
         text-align: left;
+        padding: 0 0 2.5rem;
     }
 
     .build {
         margin: 0;
+        max-width: 536px;
+        flex: 1 1 40%;
     }
 
     .img__container {
         margin: 3rem 0;
+        max-width: 680px;
+        flex: 1 1 60%;
     }
 
 }

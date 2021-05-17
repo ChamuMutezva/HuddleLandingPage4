@@ -14,4 +14,16 @@ h1 {
 }
 p {
 	line-height: 24px;
+    font-size: 0.875rem;
+}
+
+@include utils.mQ(1080px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 60px;
+    }
+    p {
+        font-size: 1.125rem;
+        line-height: 27px;
+    }
 }

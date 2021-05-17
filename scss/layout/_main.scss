@@ -16,8 +16,7 @@
     text-align: center;
 }
 
-.primary__summary {
-    font-size: 0.875rem;
+.primary__summary {   
     color: utils.$tx-mid-grey;
 }
 
@@ -29,7 +28,7 @@
 
 @include utils.mQ(1080px) {
     .main {
-        padding: 3rem 5rem;
+        padding: 8rem 5rem 3rem;
     }
 
     .primary {
@@ -37,6 +36,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin: 0 auto 4rem;
 
         &:nth-child(odd) {
             flex-direction: row-reverse;
