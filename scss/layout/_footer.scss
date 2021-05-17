@@ -5,6 +5,10 @@
     color: utils.$tx-white;
     padding: 8rem 1rem 6rem;
  }
+ .footer__wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
 .footer__logo {
     margin-bottom: 2rem;
@@ -73,4 +77,17 @@ li:not(:last-child) {
 
 .copy__right {
     text-align: center;
+}
+
+@include utils.mQ(1080px) {
+    .footer__wrapper {        
+        padding: 1rem 5rem;
+        margin: auto;
+    }
+    .social {       
+         margin: 0 auto;      
+    }
+    .about__us {       
+        align-items: center;
+    }
 }
