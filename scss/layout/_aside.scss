@@ -3,23 +3,25 @@
 .get__ready {
 
     position: relative;
-    top: 2rem;
-    padding: 3rem 1.25rem;
+    top: 4rem;
+    padding: 0.5rem 1.25rem;
+    max-width: 800px;
+    margin: auto;
 
-    .aside__container {
-        box-shadow: 2px 2px 2px 2px #979797;
-        border-radius: 20px;
-        padding: 2rem 0;
-        z-index: 2;
-        position: relative;
-        background: white;
-    }
+}
 
-    .secondary__title {
-        font-size: 1.125rem;
-        text-align: center;
-        color: utils.$tx-green-black;
-        margin-bottom: 2rem;
-    }
+.aside__container {
+    box-shadow: 2px 2px 2px 2px #979797;
+    border-radius: 20px;
+    padding: 2rem 0;
+    z-index: 2;
+    position: relative;
+    background: white;
+}
 
+.secondary__title {
+    font-size: 1.125rem;
+    text-align: center;
+    color: utils.$tx-green-black;
+    margin-bottom: 2rem;
 }
