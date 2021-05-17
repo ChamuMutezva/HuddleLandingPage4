@@ -1,52 +1,79 @@
-# Frontend Mentor - Huddle landing page with alternating feature blocks
+# Frontend Mentor - Stats preview card component solution
 
-![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge. 
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
-**To do these challenges, you need a basic understanding of HTML, CSS and (sometimes) JavaScript.**
+## Overview
 
-## Where to find everything
+### The challenge
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. 
+Users should be able to:
 
-The designs are in JPG static format. The reason for this, as opposed to including Sketch (or other similar design software) files, is to help train your eye when developing. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help when you're working on real projects, but do have access to full design files.
+- View the optimal layout depending on their device's screen size
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Screenshot
 
-There is also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
+![desktop preview](./images/desktop-preview.png)
 
-## Building your project
 
-Practice using version control by creating your own Github repository for this challenge. This has the added benefit of being able to publish it on the `gh-pages` branch at the end. Find out more about Github Pages here: [https://pages.github.com/](https://pages.github.com/).
+### Links
 
-Also, you could try building this project in a team. This is a great way to practice collaborative coding.
+- [solution URL](https://github.com/ChamuMutezva/stats-preview-card-component-main)
+- [live site URL](https://chamumutezva.github.io/stats-preview-card-component-main/)
 
-## Suggested workflow
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1) Initialize your project as a public repository on [Github](https://github.com/). This will make it easier to share your code with the community if you need some help. If you're not sure how to do this, have a read through of this [Try Git](https://try.github.io/) resource.
-2) Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes that you could create to make reusable styles.
-3) Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-4) Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-5) Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-## Sharing your solution
+### What I learned
+- **npm run build** error
+![error details](./err/parcel-build-error.png)
+solution: create a `.htmlnanorc`file in the root folder - add a JSON CONFIGURATION object
+  ```
+ {
+     "minifySvg": false
+ }
+  ```
 
-We can all learn from each other's solution, so everyone would love to see your code. There is a Slack community, which you can sign up to on the Frontend Mentor website. Post the link to your repository there and get feedback from the community.
+height is not set at the moment. The div with the class `inner` is used to set the height.
+Padding-top is used on this element as a percentage of `actual image height divided actual image width multiplied by 100%` . In this case for small screens we get `480 divided by 654 times 100%` giving us a rounded percentage of `73.4%`. The image for larger screens will be calculated as `446 divided 540 times 100%` giving us a rounded total of `82.6%`
 
-If you decide to push the project live, tweet [@frontendmentor](https://twitter.com/frontendmentor). Mention **@frontendmentor** and include the URL in the tweet. We'd love to take a look at what you've built and help share it around.
 
-## Giving feedback
+### Continued development
 
-Feedback is always welcome, so if you have any on this challenge please email me at matt[at]frontendmentor[dot]io.
 
-This challenge is completely free. Please share it with anyone who will find it useful to practice on.
+### Useful resources
+- [parcel documentation](https://parceljs.org/) - setting up the project for compilation
+- [sass documentation](https://www.example.com) - using modules
+- [smashing magazine - responsive background images](https://www.smashingmagazine.com/2013/07/simple-responsive-images-with-css-background-images/)
 
-**Have fun building!** 🚀
-https://chamumutezva.github.io/HuddleLandingPage4/
+## Author
+- Website - [Chamu Mutezva](https://github.com/ChamuMutezva)
+- Frontend Mentor - [@ChamuMutezva](https://www.frontendmentor.io/profile/ChamuMutezva)
+- Twitter - [@ChamuMutezva](https://twitter.com/ChamuMutezva)
+
+
+
+## Acknowledgments
+
+Many thanks to Matt and the Frontend Mentor community at large
