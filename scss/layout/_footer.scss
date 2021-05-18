@@ -56,6 +56,13 @@
     }
 }
 
+.fa {
+    &:hover, &:focus {
+        filter: invert(42%) sepia(93%) saturate(375%) hue-rotate(300deg);
+        text-decoration: none;
+    }
+}
+
 .social__icons {
     width: 32px;
     height: 32px;
@@ -65,12 +72,13 @@
     justify-content: center;
     align-items: center;
 
+    /*
     &:hover {
         border: 1px solid utils.$bg-btn-pink;
     }
+    */  
 
-   
-    
+
 
 }
 

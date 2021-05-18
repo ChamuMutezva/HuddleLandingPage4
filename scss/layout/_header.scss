@@ -4,7 +4,14 @@
     background-image: url("../images/bg-hero-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: utils.$bg-lime;   
+    background-color: utils.$bg-lime;
+}
+
+.logo__link {
+    &:focus,
+    &:hover {
+        outline: 2px dotted utils.$bg-btn-pink;
+    }
 }
 
 .logoSection {
@@ -61,8 +68,16 @@
         padding: 3rem 5rem 1rem;
         text-align: left;
     }
+
     .logoSection {
         padding: 1rem 1.5rem 0;
+    }
+
+    .logo__link {
+        &:focus,
+        &:hover {
+            outline: 4px dotted utils.$bg-btn-pink;
+        }
     }
 
     .hero {

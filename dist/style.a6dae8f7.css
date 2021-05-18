@@ -76,6 +76,22 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate__in {
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -113,6 +129,10 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #EDFBFF;
+}
+
+.logo__link:focus, .logo__link:hover {
+  outline: 2px dotted #FF52C1;
 }
 
 .logoSection {
@@ -170,6 +190,10 @@ p {
 
   .logoSection {
     padding: 1rem 1.5rem 0;
+  }
+
+  .logo__link:focus, .logo__link:hover {
+    outline: 4px dotted #FF52C1;
   }
 
   .hero {
@@ -342,6 +366,11 @@ p {
   border-bottom: 2px solid white;
 }
 
+.fa:hover, .fa:focus {
+  filter: invert(42%) sepia(93%) saturate(375%) hue-rotate(300deg);
+  text-decoration: none;
+}
+
 .social__icons {
   width: 32px;
   height: 32px;
@@ -350,9 +379,11 @@ p {
   border: 1px solid white;
   justify-content: center;
   align-items: center;
-}
-.social__icons:hover {
-  border: 1px solid #FF52C1;
+  /*
+  &:hover {
+      border: 1px solid utils.$bg-btn-pink;
+  }
+  */
 }
 
 .social {
