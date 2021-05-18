@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../utils';
 .btn__try {
     background-color: utils.$bg-white;
@@ -8,7 +9,13 @@
     color: utils.$tx-green-black;
     text-decoration: none;
     text-align: center;
+    border: 2px solid transparent;
+
+    &:hover, &:focus {
+        outline: 2px solid utils.$tx-mid-grey;        
+    };
 }
+
 .get__started {
     background-color: utils.$bg-btn-pink;
 	padding: .8rem 2rem;
@@ -18,12 +25,24 @@
 	max-width: 240px;
     font-size: 0.75rem;
     color: utils.$tx-white;
-    //border-radius: 20px;
+    &:hover, &:focus {
+        background-color: color.scale(utils.$bg-btn-pink, $lightness: 30%);        
+    };
+  
 }
 
 @include utils.mQ(1080px) {
     .btn__try {           
-        padding: 1rem 3rem;           
+        padding: 1rem 3rem;    
+        font-size: 1.25rem;   
+        border-radius: 40px;            
+        border: 4px solid transparent;
+        &:hover, &:focus {
+            outline: 4px solid utils.$tx-mid-grey;
+        };
+    }
+    .get__started {
+        max-width: 400px;
     }
     .hero__btn {
         margin-left: 0;
