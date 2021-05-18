@@ -242,6 +242,11 @@ p {
     max-width: 490px;
     text-align: left;
   }
+
+  .primary__title {
+    font-size: 1.75rem;
+    line-height: 40px;
+  }
 }
 .get__ready {
   position: relative;
@@ -333,6 +338,9 @@ p {
   text-decoration: none;
   color: white;
 }
+.about__us a:hover, .about__us a:focus {
+  border-bottom: 2px solid white;
+}
 
 .social__icons {
   width: 32px;
@@ -342,6 +350,9 @@ p {
   border: 1px solid white;
   justify-content: center;
   align-items: center;
+}
+.social__icons:hover {
+  border: 1px solid #FF52C1;
 }
 
 .social {
@@ -387,6 +398,10 @@ li:not(:last-child) {
   color: #00252E;
   text-decoration: none;
   text-align: center;
+  border: 2px solid transparent;
+}
+.btn__try:hover, .btn__try:focus {
+  outline: 2px solid #808E9A;
 }
 
 .get__started {
@@ -399,10 +414,23 @@ li:not(:last-child) {
   font-size: 0.75rem;
   color: #ffffff;
 }
+.get__started:hover, .get__started:focus {
+  background-color: #ff86d4;
+}
 
 @media screen and (min-width: 1080px) {
   .btn__try {
     padding: 1rem 3rem;
+    font-size: 1.25rem;
+    border-radius: 40px;
+    border: 4px solid transparent;
+  }
+  .btn__try:hover, .btn__try:focus {
+    outline: 4px solid #808E9A;
+  }
+
+  .get__started {
+    max-width: 400px;
   }
 
   .hero__btn {
