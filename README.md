@@ -51,7 +51,8 @@ Users should be able to:
 ![error details](./err/parcel-build-error.PNG)
 solution: create a `.htmlnanorc`file in the root folder - add a JSON CONFIGURATION object
 
-``` {
+```
+ {
      "minifySvg": false
  }
 ```
