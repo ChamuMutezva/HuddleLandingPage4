@@ -125,7 +125,7 @@ p {
   }
 }
 .header {
-  background-image: url("../images/bg-hero-mobile.svg");
+  background-image: url("../../images/bg-hero-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #EDFBFF;
@@ -183,7 +183,7 @@ p {
 
 @media screen and (min-width: 1080px) {
   .header {
-    background-image: url("../images/bg-hero-desktop.svg");
+    background-image: url("../../images/bg-hero-desktop.svg");
     padding: 3rem 5rem 1rem;
     text-align: left;
   }
