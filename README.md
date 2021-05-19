@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -24,30 +24,31 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
+- accessible to assistive technology users
 
 ### Screenshot
 
-![desktop preview](./images/desktop-preview.png)
+![desktop preview](./images/preview.png)
 
 
 ### Links
 
-- [solution URL](https://github.com/ChamuMutezva/stats-preview-card-component-main)
-- [live site URL](https://chamumutezva.github.io/stats-preview-card-component-main/)
+- [live site URL](https://chamumutezva.github.io/HuddleLandingPage4/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Scss node modules
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- intersection observer api
 
 ### What I learned
 - **npm run build** error
-![error details](./err/parcel-build-error.png)
+![error details](./err/parcel-build-error.PNG)
 solution: create a `.htmlnanorc`file in the root folder - add a JSON CONFIGURATION object
   ```
  {
@@ -55,17 +56,12 @@ solution: create a `.htmlnanorc`file in the root folder - add a JSON CONFIGURATI
  }
   ```
 
-height is not set at the moment. The div with the class `inner` is used to set the height.
-Padding-top is used on this element as a percentage of `actual image height divided actual image width multiplied by 100%` . In this case for small screens we get `480 divided by 654 times 100%` giving us a rounded percentage of `73.4%`. The image for larger screens will be calculated as `446 divided 540 times 100%` giving us a rounded total of `82.6%`
-
 
 ### Continued development
 
 
 ### Useful resources
-- [parcel documentation](https://parceljs.org/) - setting up the project for compilation
-- [sass documentation](https://www.example.com) - using modules
-- [smashing magazine - responsive background images](https://www.smashingmagazine.com/2013/07/simple-responsive-images-with-css-background-images/)
+
 
 ## Author
 - Website - [Chamu Mutezva](https://github.com/ChamuMutezva)
