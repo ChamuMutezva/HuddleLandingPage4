@@ -57,7 +57,9 @@
 }
 
 .fa {
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         filter: invert(42%) sepia(93%) saturate(375%) hue-rotate(300deg);
         text-decoration: none;
     }
@@ -71,15 +73,6 @@
     border: 1px solid white;
     justify-content: center;
     align-items: center;
-
-    /*
-    &:hover {
-        border: 1px solid utils.$bg-btn-pink;
-    }
-    */  
-
-
-
 }
 
 .social {
@@ -103,11 +96,26 @@ li:not(:last-child) {
     text-align: center;
 }
 
+@include utils.mQ(620px) {
+    .footer {
+        .about__us {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .about__us__item {
+            flex: 1 1 50%;
+        }
+    }
+}
+
+
 @include utils.mQ(1080px) {
     .footer__wrapper {
         max-width: 1280px;
         padding: 1rem 5rem;
         margin: auto;
+        justify-items: center;
     }
 
     .social {
