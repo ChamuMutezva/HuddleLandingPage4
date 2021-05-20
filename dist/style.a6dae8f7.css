@@ -387,11 +387,13 @@ p {
 }
 .about__us a:hover, .about__us a:focus {
   border-bottom: 2px solid white;
+  outline: none;
 }
 
 .fa:hover, .fa:focus {
   filter: invert(42%) sepia(93%) saturate(375%) hue-rotate(300deg);
   text-decoration: none;
+  outline: none;
 }
 
 .social__icons {

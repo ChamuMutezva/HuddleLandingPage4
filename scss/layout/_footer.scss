@@ -52,6 +52,7 @@
         &:hover,
         &:focus {
             border-bottom: 2px solid white;
+            outline: none;
         }
     }
 }
@@ -62,6 +63,7 @@
     &:focus {
         filter: invert(42%) sepia(93%) saturate(375%) hue-rotate(300deg);
         text-decoration: none;
+        outline: none;
     }
 }
 
